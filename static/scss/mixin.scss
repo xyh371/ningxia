@@ -1,0 +1,81 @@
+@mixin wh ($width, $height) {
+  width: $width;
+  height: $height;
+}
+
+@mixin flex () {
+  display: flex;
+  flex-wrap: wrap;
+}
+
+@mixin center ($width, $height) {
+  @include wh($width, $height);
+  position: absolute;
+  top: 0;
+  left: 0;
+  right: 0;
+  bottom: 0;
+  margin: 0;
+}
+@mixin ml ($width) {
+  margin-left: $width
+}
+
+@mixin mr ($width) {
+  margin-right: $width
+}
+
+@mixin mt ($width) {
+  margin-top: $width
+}
+
+@mixin mb ($width) {
+  margin-bottom: $width
+}
+
+@mixin pl ($width) {
+  padding-left: $width
+}
+
+@mixin pr ($width) {
+  padding-right: $width
+}
+
+@mixin pt ($width) {
+  padding-top: $width
+}
+
+@mixin pb ($width) {
+  padding-bottom: $width
+}
+
+@mixin ta () {
+  text-align: center
+}
+
+@mixin lh ($height) {
+  line-height: $height
+}
+
+@mixin bs () {
+  box-sizing: border-box
+}
+
+@mixin fz ($size) {
+  font-size: $size;
+}
+@mixin bb ($size, $s) {
+  border-bottom: $size solid $s
+}
+@mixin bt ($size, $s) {
+  border-top: $size solid $s
+}
+@mixin bl ($size, $s) {
+  border-left: $size solid $s
+}
+@mixin br ($size, $s) {
+  border-right: $size solid $s
+}
+@mixin bd ($size, $s) {
+  border: $size solid $s
+}
